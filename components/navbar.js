@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="relative z-10 container mx-auto px-36 py-4">
+    <nav className="relative z-10 container mx-auto px-2 sm:px-36 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
             <Image src={'/images/shoe-logo.png'} width={150} height={150} alt='shoe-logo'/>
@@ -13,7 +13,7 @@ const Navbar = () => {
             <Link href="/" className="text-black hover:text-orange-400 transition-colors duration-500">
               Home
             </Link>
-            <Link href="/about" className="text-black hover:text-orange-400 transition-colors duration-500">
+            <Link href="/about-us" className="text-black hover:text-orange-400 transition-colors duration-500">
               About Us
             </Link>
             <Link href="/services" className="text-black hover:text-orange-400 transition-colors duration-500">
@@ -23,7 +23,7 @@ const Navbar = () => {
               Contact Us
             </Link>
           </div>
-          <button className="bg-orange-400 text-white px-6 py-3 rounded-md">
+          <button className="bg-orange-400 text-white px-6 py-3 hidden sm:block rounded-md">
             Contact Us
           </button>
         </div>

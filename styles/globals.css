@@ -19,3 +19,23 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+/* Custom styles for Swiper pagination */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3b82f6;
+}
+
+/* Ensure full height for Swiper slides */
+.swiper-slide {
+  height: auto;
+}
+
+body{
+  overflow-x: hidden;
+}
