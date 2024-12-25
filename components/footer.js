@@ -5,12 +5,12 @@ import { LuClock8, LuFacebook, LuInstagram, LuTwitch, LuTwitter, LuYoutube } fro
 
 const Footer = () => {
   return (
-    <footer className="bg-[#00A8FF] relative z-0">
-    <div className="container px-2 sm:px-36  py-12 mx-auto">
+    <footer className="bg-[#00A8FF] relative z-0 text-white">
+    <div className="container px-2 sm:px-36  pt-12 pb-8 mx-auto">
         <div className="md:flex md:-mx-3 md:items-center md:justify-between">
 
             <div className='sm:w-[30rem]'>
-            <h1 className="text-3xl py-3 font-semibold tracking-tight text-gray-800 dark:text-white ">
+            <h1 className="text-3xl py-3 font-semibold tracking-tight text-white ">
             Join Our Newsletter
             </h1>
             <p className="text-lg font-thin tracking-tight text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illo error voluptas repudiandae assumenda non reiciendis?</p>
@@ -38,33 +38,33 @@ const Footer = () => {
             <div className='col-span-2'>
             <div className='grid sm:grid-cols-3 gap-2'>
             <div className="pb-10">
-                <p className="font-semibold text-gray-800 dark:text-white text-2xl pb-5">Quick Links</p>
+                <p className="font-semibold  text-2xl pb-5">Quick Links</p>
                 <hr className='w-20 h-1 border-0 rounded bg-yellow-400'/>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">About Us</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Services</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Appointment</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Pricing</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Contact</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">About Us</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Services</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Appointment</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Pricing</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Contact</Link>
                 </div>
             </div>
 
             <div className="pb-10">
-                <p className="font-semibold text-gray-800 dark:text-white text-2xl pb-5">Useful Links</p>
+                <p className="font-semibold  text-2xl pb-5">Useful Links</p>
                 <hr className='w-20 h-1 border-0 rounded bg-yellow-400'/>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Privacy Policy</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Terms and Conditions</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Disclaimer</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">Support</Link>
-                    <Link href="#" className="text-gray-600 transition-colors duration-300 dark:text-white dark:hover:text-yellow-400  hover:text-blue-500">FAQ</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Privacy Policy</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Terms and Conditions</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Disclaimer</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">Support</Link>
+                    <Link href="#" className=" transition-colors duration-300  hover:text-yellow-400  ">FAQ</Link>
                 </div>
             </div>
 
             <div className="pb-10 sm:pb-0">
-                <p className="font-semibold text-gray-800 dark:text-white text-2xl pb-5">Work Hours</p>
+                <p className="font-semibold  text-2xl pb-5">Work Hours</p>
                 <hr className='w-20 h-1 border-0 rounded bg-yellow-400'/>
 
                 <div className="flex flex-col items-start mt-5 space-y-4">
@@ -81,9 +81,8 @@ const Footer = () => {
         <hr className="my-6 border-blue-300 md:my-5 "/>
         
         <div className="flex flex-col items-center justify-end sm:flex-row">
-           
 
-            <p className=" text-sm text-gray-500 sm:mt-0 dark:text-white">© Copyright 2021. All Rights Reserved.</p>
+            <p className=" text-md text-white  sm:mt-0 ">© Copyright 2021. All Rights Reserved.</p>
         </div>
     </div>
 </footer>

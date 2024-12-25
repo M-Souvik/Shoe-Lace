@@ -4,7 +4,7 @@ import { FaCheck } from 'react-icons/fa'
 
 const AboutUsPage = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-2 place-content-center">
+    <div className="grid lg:grid-cols-2 gap-2 place-content-center ">
     {/* Left column - Image */}
     <div className="relative aspect-square lg:aspect-auto">
       <Image
@@ -12,7 +12,7 @@ const AboutUsPage = () => {
         alt="Shoe cleaning service"
         width={530}
         height={530}
-        className="rounded-lg object-cover "
+        className="rounded-xl object-cover "
         priority
       />
     </div>
@@ -21,7 +21,7 @@ const AboutUsPage = () => {
     <div className="relative space-y-6">
       <div className="text-blue-500 font-medium">About Us</div>
       
-      <h1 className="text-4xl lg:text-5xl font-bold tracking-tight">
+      <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight">
         Stay at Home, We Make it Done for you.
       </h1>
       
@@ -46,7 +46,7 @@ const AboutUsPage = () => {
           "60 Days Warranty"
         ].map((feature) => (
           <div key={feature} className="flex items-center gap-2">
-            <div className="rounded-full bg-sky-500 p-0.5">
+            <div className="rounded-full bg-sky-500 p-[0.195rem]">
               <FaCheck className="w-3 h-3 text-white" />
             </div>
             <span>{feature}</span>
@@ -64,7 +64,7 @@ const AboutUsPage = () => {
           alt="Decorative pattern"
           width={500}
           height={500}
-          className="rounded-lg sm:object-cover w-full h-full"
+          className="rounded-xl sm:object-cover w-full h-full"
         />
       </div>
       </div>

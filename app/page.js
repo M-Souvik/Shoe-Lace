@@ -14,7 +14,7 @@ import NewsBlog from "@/components/news-page";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen w-full px-5 sm:px-40">
+      <div className="min-h-screen w-full px-5 lg:px-40 md:px-20 ">
         <div className="absolute inset-0 z-0 w-full flex">
           <svg
             viewBox="0 0 1440 320"
@@ -48,13 +48,13 @@ export default function Home() {
             </div>
             
             <div className="relative flex justify-center items-center w-full mt-16 sm:mt-24 top-10 sm:top-48">
-              <div className="w-full h-64 sm:h-[37rem] bg-sky-400 rounded-xl relative z-0"></div>
+              <div className="w-full h-64 sm:h-[37rem] bg-[#00A8FF] rounded-xl relative z-0"></div>
               <Image
                 src="/images/shoe.png"
                 alt="Shoe"
                 width={570}
                 height={570}
-                className="absolute z-10 bottom-0 sm:bottom-32 object-contain w-3/4 sm:w-auto"
+                className="absolute z-5 bottom-0 sm:bottom-32 object-contain w-3/4 sm:w-auto"
                 priority
               />
             </div>
@@ -77,12 +77,12 @@ export default function Home() {
           <div className="mt-12 sm:mt-20">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: IoMdCall, title: "Contact for Order", number: "01", bgColor: "bg-sky-400" },
+                { icon: IoMdCall, title: "Contact for Order", number: "01", bgColor: "bg-[#00A8FF]" },
                 { icon: FaTruck, title: "Pick Up Order", number: "02" },
                 { icon: FaHandsWash, title: "Clean Your Shoes", number: "03" },
                 { icon: FaTruck, title: "Deliver to You", number: "04" },
               ].map((item, index) => (
-                <div key={index} className={`relative  rounded-lg border p-6 ${item.bgColor || 'hover:bg-gray-100'} transition-colors duration-200`}>
+                <div key={index} className={`relative  rounded-xl border p-6 ${item.bgColor || 'hover:bg-gray-100'} transition-colors duration-200`}>
                   <item.icon size={40} className={`text-white absolute -top-5 ${index === 0 ? 'bg-orange-400' : 'bg-black'} p-2 rounded-md`}/>
                   <h3 className={`${index === 0 ? 'text-white' : 'text-orange-400'} text-center text-4xl font-bold`}>{item.number}</h3>
                   <div className="mt-4 flex flex-col gap-2">

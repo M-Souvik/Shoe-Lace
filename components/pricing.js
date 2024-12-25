@@ -44,7 +44,7 @@ export default function PricingSection() {
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-10">
 
         <div>
-           <h2 className="text-sky-400 text-sm font-semibold mb-2">Our Services</h2>
+           <h2 className="text-[#00A8FF] text-sm font-semibold mb-2">Our Services</h2>
           <h3 className="text-4xl font-bold mb-4">Affordable Pricing Plans</h3>
           <p className="text-gray-600 max-w-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

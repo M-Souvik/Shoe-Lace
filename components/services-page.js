@@ -25,7 +25,7 @@ export default function ServicesSection() {
 
   return (
     <section className="relative z-10 py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         {/* Section Header */}
         <div className="text-center mb-7">
           <h2 className="text-xl font-bold text-sky-400">Our Services</h2>
@@ -38,7 +38,7 @@ export default function ServicesSection() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
-            <div key={index} className="group relative z-20 overflow-hidden rounded-lg">
+            <div key={index} className="group relative z-20 overflow-hidden rounded-xl">
               {/* Image Container */}
               <div className="aspect-w-16 aspect-h-12 relative">
                 <Image
@@ -50,11 +50,11 @@ export default function ServicesSection() {
                   className="object-cover w-[500px] h-[600px]"
                 />
                 {/* Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 transition-colors duration-200 group-hover:bg-sky-500 h-44" />
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 transition-colors duration-200 group-hover:bg-[#00A8FF] h-52  " />
               </div>
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6 text-center text-white">
+              <div className="absolute inset-0 flex flex-col justify-end py-10 px-4 text-center text-white">
                 <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-sm text-gray-200 mb-4">{service.description}</p>
                 <Link 
