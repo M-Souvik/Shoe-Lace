@@ -43,7 +43,7 @@ export default function PricingSection() {
     <section className="relative z-20 pt-16">
       <div className=" mx-auto">
         <div className="mb-12">
-            <div className="grid sm:grid-cols-2 gap-4 sm:gap-10">
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-10">
 
         <div>
            <h2 className="text-[#00A8FF] text-sm font-semibold mb-2">Our Services</h2>

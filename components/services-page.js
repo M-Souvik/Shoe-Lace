@@ -24,7 +24,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative z-10">
+    <section className="relative z-0">
       <div className=" mx-auto">
         {/* Section Header */}
         <div className="text-center mb-7">
@@ -36,7 +36,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <div key={index} className="group relative z-20 overflow-hidden rounded-xl">
               {/* Image Container */}
@@ -47,11 +47,11 @@ export default function ServicesSection() {
                   width={10000}
                   height={10000}
                   
-                  className="object-cover w-[500px] h-[600px]"
+                  className="object-cover relative z-0 lg:w-[500px] h-[600px]"
                 />
                 {/* Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 transition-colors duration-200 group-hover:bg-[#00A8FF] h-52  " />
-              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 transition-colors duration-200 group-hover:bg-[#00A8FF] h-52" />
+              
 
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end py-10 px-4 text-center text-white">
@@ -65,6 +65,7 @@ export default function ServicesSection() {
                  
                 </Link>
               </div>
+            </div>
             </div>
           ))}
         </div>

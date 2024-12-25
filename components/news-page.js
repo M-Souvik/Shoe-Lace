@@ -45,7 +45,7 @@ export default function NewsBlog() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid gap-8 pt-12 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mx-auto grid gap-8 pt-12 sm:grid-cols-1 md:gap-12 lg:grid-cols-3">
           {posts.map((post) => (
             <BlogCard key={post.slug} post={post} />
           ))}

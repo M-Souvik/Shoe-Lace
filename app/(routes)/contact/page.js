@@ -10,16 +10,15 @@ export default function ContactPage() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setLoading(false);
   };
 
   return (
-    <div className="relative pb-96">
-    <div className="container mx-auto px-40 py-12 relative z-20">
+    <div className="relative z-0 pb-96">
+    <div className="container mx-auto px-2 lg:px-40 md:px-6 py-12 relative z-20">
       <div>
-      <Header title={'Contact'} link={'/contact'}/>
+      <Header title={'Contact Us'} link={'/contact'}/>
       </div>
       <div className="grid lg:grid-cols-2 gap-12 content-center">
       <div className="mb-8">
@@ -66,18 +65,6 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-
-          {/* <div className="w-full h-[400px] rounded-lg overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2025477905427!2d115.22288731478386!3d-8.672427393766792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374f!2sLapangan%20Niti%20Mandala%20Renon!5e0!3m2!1sen!2sid!4v1679904256596!5m2!1sen!2sid"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div> */}
         </div>
 
         <div className="card bg-base-100 shadow-xl border">

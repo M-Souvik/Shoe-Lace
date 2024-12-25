@@ -8,17 +8,21 @@ import { FaCheck, FaHandsWash, FaTruck } from "react-icons/fa"
 import { IoMdCall } from "react-icons/io"
 import { TfiControlForward } from "react-icons/tfi";
 import {motion} from 'motion/react'
+import AboutUsSection from "@/components/about-us-section"
 
 export default function AboutUs() {
   return (
-    <div className="container mx-auto px-40 pt-12">
+    <div className="container mx-auto px-2 lg:px-40 pt-12">
       {/* <div className="w-full h-64 bg-gradient-to-tl from-sky-700 via-sky-500 to-sky-800 rounded-xl my-4 mb-32 flex flex-col justify-center px-12">
        <h1 className="text-5xl font-semibold text-white">About Us</h1>
        <span className="flex py-2 items-center gap-2 text-lg text-white  font-semibold"><Link href="/">Home</Link> <span className="text-orange-400"><TfiControlForward size={25} fill="orange"/></span> <Link href="/about-us">About Us</Link></span>
       </div> */}
       <Header title={'About Us'} link={'/about-us'}/>
+      <div className="px-3">
+
      <AboutUsPage/>
-     <div>
+      </div>
+     {/* <div>
         <div className="relative min-h-screen top-48">
           <h1 className="text-blue-400 text-lg font-semibold">
           Our Process
@@ -80,6 +84,9 @@ export default function AboutUs() {
 
           </motion.div>
         </div>
+      </div> */}
+      <div className="pb-10">
+      <AboutUsSection/>
       </div>
 
     </div>

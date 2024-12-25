@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 
-export function YouTubeModal({ videoId }) {
-  const [isOpen, setIsOpen] = useState(false)
+export function YouTubeModal({ videoId, isOpen, setIsOpen }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>

@@ -7,7 +7,7 @@ import { motion } from 'motion/react'
 
 const AboutUsPage = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-2 place-content-center ">
+    <div className="grid lg:grid-cols-2 gap-10 place-content-center ">
     {/* Left column - Image */}
     <div className="relative aspect-square lg:aspect-auto">
       <Image
@@ -15,7 +15,7 @@ const AboutUsPage = () => {
         alt="Shoe cleaning service"
         width={530}
         height={530}
-        className="rounded-xl object-cover "
+        className="rounded-xl object-cover md:w-full md:h-full"
         priority
       />
     </div>

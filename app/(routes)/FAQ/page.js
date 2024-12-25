@@ -45,7 +45,7 @@ export default function FAQSection() {
 
   return (
     <>
-    <section className="sm:px-40 pt-12">
+    <section className="lg:px-40 md:px-6 pt-12">
       <Header title={'FAQ'} link={'/FAQ'}/>
     </section>
       <section className="pb-24 px-4 md:px-6 bg-white">

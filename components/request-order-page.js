@@ -54,15 +54,15 @@ function StatsCard({ icon: Icon, value, label }) {
 export default function RequestOrderPage() {
   return (
     <div className="relative ">
-      <div className="container mx-auto py-20">
+      <div className="relative container mx-auto py-20">
         {/* Header Section */}
         <div className=" text-white mb-20 bg-gradient-to-tl from-sky-700 via-sky-400 to-sky-700 h-[25rem]">
-          <div className='sm:py-28 flex flex-col sm:flex-row sm:gap-[23rem] py-16 px-4 sm:px-32 sm:items-center'>
+          <div className='md:py-8 lg:py-28 flex flex-col lg:flex-row lg:gap-[23rem] py-16 px-4 lg:px-32 lg:items-center'>
           <div>
 
           <p className="text-orange-300 font-medium mb-2 sm:mb-4">Request Order</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-2 sm:mb-6">Get Special Offer Now</h1>
-          <p className="max-w-2xl mx-auto mb-4 sm:mb-8">
+          <p className="max-w-2xl lg:mx-auto mb-4 sm:mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </p>
@@ -100,8 +100,8 @@ export default function RequestOrderPage() {
 
          }}
          viewport={{ once: true }}
-        className='absolute w-full top-[27rem] px-3 sm:top-96 rounded-xl'>
-        <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto bg-white rounded-xl py-4 shadow-lg">
+        className='absolute w-full px-2 sm:w-full top-[27rem] lg:px-3 sm:top-96 rounded-xl'>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl place-content-center mx-auto bg-white rounded-xl sm:px-20 md:px-20 lg:py-4 shadow-lg">
           <StatsCard 
             icon={Award} 
             value={4452} 

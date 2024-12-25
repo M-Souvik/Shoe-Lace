@@ -6,7 +6,7 @@ import { LuClock8, LuFacebook, LuInstagram, LuTwitch, LuTwitter, LuYoutube } fro
 const Footer = () => {
   return (
     <footer className="bg-[#00A8FF] relative z-0 text-white">
-    <div className="container px-2 sm:px-36  pt-12 pb-8 mx-auto">
+    <div className="container px-2 lg:px-36  pt-12 pb-8 mx-auto">
         <div className="md:flex md:-mx-3 md:items-center md:justify-between">
 
             <div className='sm:w-[30rem]'>

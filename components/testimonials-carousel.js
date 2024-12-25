@@ -87,7 +87,7 @@ export default function TestimonialsCarousel() {
           pagination={{
             clickable: true,
           }}
-          className="mySwiper sm:absolute sm:-left-[19rem]"
+          className="mySwiper sm:absolute lg:-left-[19rem] md:-left-[10rem]"
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function BlogCard({ post }) {
   return (
-    <div className="group flex flex-col space-y-3 w-96">
+    <div className="group flex flex-col space-y-3 lg:w-96">
       <div className=" rounded-lg relative z-0">
         <img
           src={post.image}

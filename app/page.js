@@ -16,9 +16,11 @@ import {motion} from 'motion/react'
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
 
+  console.log(isVideoOpen)
+
   return (
     <>
-      <div className="min-h-screen w-full px-5 lg:px-40 md:px-20 ">
+      <div className="min-h-screen w-full px-5 lg:px-40 md:px-6 ">
         <div className="absolute inset-0 z-0 w-full flex">
           <svg
             viewBox="0 0 1440 320"
@@ -128,23 +130,25 @@ export default function Home() {
         <RequestOrderPage/>
       </div>
       {/* 4thpage */}
-      <div className="relative sm:py-0 pt-52 sm:pt-0 px-5 sm:px-40">
-        <div className='py-16'>
+      <div className="relative sm:py-0 pt-52 sm:pt-0 px-5 lg:px-40 md:px-6">
+        <div className='md:py-16 relative md:top-52'>
           <ServicesSection/>
         </div>
+        <div className='md:py-16 relative md:top-40'>
+
         <PricingSection/>
+        </div>
       </div>
-      <div className="relative sm:pb-48 px-2 sm:pl-40">
+      <div className="relative sm:pb-48 px-2 lg:pl-40 md:pl-10">
       <Testimonials/>
       </div>
-      <div className="relative px-2 sm:px-32">
+      <div className="relative px-2 md:px-6 lg:px-32">
       <NewsBlog/>
       </div>
 
       {/* YouTube Modal */}
-      {isVideoOpen && (
-        <YouTubeModal videoId="https://www.youtube.com/embed/tgbNymZ7vqY" />
-      )}
+        <YouTubeModal isOpen={isVideoOpen} setIsOpen={setIsVideoOpen} videoId="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=true" />
+
     </>
   )
 }
