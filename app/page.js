@@ -147,7 +147,7 @@ export default function Home() {
       </div>
 
       {/* YouTube Modal */}
-        <YouTubeModal isOpen={isVideoOpen} setIsOpen={setIsVideoOpen} videoId="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=true" />
+        <YouTubeModal isOpen={isVideoOpen} setIsOpen={setIsVideoOpen} videoId="https://youtu.be/AkuUuvbg02PdBPxK?autoplay=true" />
 
     </>
   )

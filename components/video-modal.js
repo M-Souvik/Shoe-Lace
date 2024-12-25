@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 
 export function YouTubeModal({ videoId, isOpen, setIsOpen }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <DialogTitle className="hidden"></DialogTitle>
       <DialogContent className="sm:max-w-[800px] p-0">
         <div className="aspect-video">
           <iframe
