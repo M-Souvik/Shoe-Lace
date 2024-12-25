@@ -121,3 +121,7 @@ body{
 .hover-lift:hover {
   transform: translateY(-8px);
 }
+
+html{
+  scroll-behavior: smooth;
+}

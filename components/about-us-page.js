@@ -7,7 +7,7 @@ import { motion } from 'motion/react'
 
 const AboutUsPage = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-10 place-content-center ">
+    <div  className="grid lg:grid-cols-2 gap-10 place-content-center ">
     {/* Left column - Image */}
     <div className="relative aspect-square lg:aspect-auto">
       <Image

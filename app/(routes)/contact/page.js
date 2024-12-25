@@ -17,9 +17,9 @@ export default function ContactPage() {
   return (
     <div className="relative z-0 pb-96">
     <div className="container mx-auto px-2 lg:px-40 md:px-6 py-12 relative z-20">
-      <div>
+      {/* <div>
       <Header title={'Contact Us'} link={'/contact'}/>
-      </div>
+      </div> */}
       <div className="grid lg:grid-cols-2 gap-12 content-center">
       <div className="mb-8">
         <h4 className="font-medium mb-2 text-blue-500">Contact Us</h4>

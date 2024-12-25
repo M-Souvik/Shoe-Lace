@@ -12,6 +12,7 @@ import Testimonials from "@/components/testimonials-page"
 import NewsBlog from "@/components/news-page"
 import { YouTubeModal } from '@/components/video-modal'
 import {motion} from 'motion/react'
+import ContactPage from './(routes)/contact/page'
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
@@ -122,7 +123,7 @@ export default function Home() {
         </div>
 
         {/* 3rd page */}
-        <div className="mt-24 sm:mt-48">
+        <div id='aboutus' className="pt-24 sm:pt-48">
           <AboutUsPage/>
         </div>
       </div>
@@ -130,8 +131,8 @@ export default function Home() {
         <RequestOrderPage/>
       </div>
       {/* 4thpage */}
-      <div className="relative sm:py-0 pt-52 sm:pt-0 px-5 lg:px-40 md:px-6">
-        <div className='md:py-16 relative md:top-52'>
+      <div  className="relative sm:py-0 pt-52 sm:pt-0 px-5 lg:px-40 md:px-6">
+        <div id='service' className='md:py-16 relative md:top-52'>
           <ServicesSection/>
         </div>
         <div className='md:py-16 relative md:top-40'>
@@ -144,6 +145,9 @@ export default function Home() {
       </div>
       <div className="relative px-2 md:px-6 lg:px-32">
       <NewsBlog/>
+      </div>
+      <div id='contact' className="">
+      <ContactPage/>
       </div>
 
       {/* YouTube Modal */}

@@ -3,11 +3,13 @@
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import React, { useEffect, useRef, useState } from 'react'
+// import '@/styles/globals.css'
 
 const Navbar = () => {
   const pathname = usePathname();
+  const router=useRouter();
   useEffect(() => {
     console.log(pathname)
   }, [pathname])
@@ -24,22 +26,22 @@ const Navbar = () => {
             <Link href="/" className="text-black hover:text-orange-400 transition-colors focus:text-orange-400 duration-500">
               Home
             </Link>
-            <Link href="/about-us" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
+            <Link href="/#aboutus" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
               About Us
             </Link>
-            <Link href="/FAQ" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
+            {/* <Link href="/FAQ" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
               FAQ
-            </Link>
-            <Link href="/services" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
+            </Link> */}
+            <Link href="/#service" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
               Services
             </Link>
-            <Link href="/contact" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
+            {/* <Link href="/#contact" className="text-black hover:text-orange-400 transition-colors duration-500 focus:text-orange-400">
               Contact Us
-            </Link>
+            </Link> */}
           </div>
-          <button className="bg-orange-400 text-white px-6 py-3 hidden lg:block rounded-md focus:text-orange-400">
+          <Link href={'/#contact'} className="bg-orange-400 text-white px-6 py-3 hidden lg:block rounded-md hover:-translate-y-2 transition-transform duration-300">
             Contact Us
-          </button>
+          </Link>
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
           <div className="lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className=" bg-transparent border-none">
