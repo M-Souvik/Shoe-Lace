@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Award, Users2, Globe, Building2 } from 'lucide-react'
 import { LiaUsersSolid } from "react-icons/lia";
 import { FaCity } from 'react-icons/fa';
+import {motion} from 'motion/react'
 
 
 function AnimatedCounter({ end, duration = 2000 }) {
@@ -66,17 +67,41 @@ export default function RequestOrderPage() {
             incididunt ut labore et dolore magna aliqua.
           </p>
           </div>
+          <motion.div
+          initial={{ opacity: 0, x:-500 }}
+          whileInView={{
+            opacity: 1 ,
+            x:0,
+            transition:{
+              duration: 1,
+            }
+           }}
+
+           viewport={{ once: true }}
+          >
           <button  
-            className=" w-40 h-16 relative btn bg-orange-400 rounded-md hover:bg-orange-500 text-white"
+            className=" w-40 h-16 relative btn bg-orange-400 rounded-xl hover:bg-orange-500 text-white hover:-translate-y-2 transition-transform duration-200"
           >
             Request Order
           </button>
+          </motion.div>
           </div>
         </div>
 
         {/* Stats Grid */}
-        <div className='absolute w-full top-[27rem] px-3 sm:top-96 rounded-xl'>
-        <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto bg-white rounded-lg py-4 shadow-lg">
+        <motion.div 
+        initial={{ opacity: 0, y:200 }}
+        whileInView={{
+          opacity: 1 ,
+          y:0,
+          transition:{
+            duration: 1,
+          }
+
+         }}
+         viewport={{ once: true }}
+        className='absolute w-full top-[27rem] px-3 sm:top-96 rounded-xl'>
+        <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto bg-white rounded-xl py-4 shadow-lg">
           <StatsCard 
             icon={Award} 
             value={4452} 
@@ -98,7 +123,7 @@ export default function RequestOrderPage() {
             label="City Store" 
           />
         </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

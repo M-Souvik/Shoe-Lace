@@ -1,17 +1,21 @@
-import Image from "next/image";
-import { LuMonitorPlay } from "react-icons/lu";
-import { FaHandsWash, FaPlay, FaTruck } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
-import { IoMdCall } from "react-icons/io";
-import AboutUsPage from "@/components/about-us-page";
-import RequestOrderPage from "@/components/request-order-page";
-import ServicesSection from "@/components/services-page";
-import PricingSection from "@/components/pricing";
-import TestimonialsCarousel from "@/components/testimonials-carousel";
-import Testimonials from "@/components/testimonials-page";
-import NewsBlog from "@/components/news-page";
+'use client'
+
+import React, { useState } from 'react'
+import Image from "next/image"
+import { FaHandsWash, FaPlay, FaTruck } from "react-icons/fa"
+import { IoMdCall } from "react-icons/io"
+import AboutUsPage from "@/components/about-us-page"
+import RequestOrderPage from "@/components/request-order-page"
+import ServicesSection from "@/components/services-page"
+import PricingSection from "@/components/pricing"
+import Testimonials from "@/components/testimonials-page"
+import NewsBlog from "@/components/news-page"
+import { YouTubeModal } from '@/components/video-modal'
+import {motion} from 'motion/react'
 
 export default function Home() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+
   return (
     <>
       <div className="min-h-screen w-full px-5 lg:px-40 md:px-20 ">
@@ -28,35 +32,43 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-        <div className="relative z-5 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-32 w-full">
+        <div className="relative z-5 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-32 w-full top-10">
           <div className="flex flex-col items-center">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black leading-tight mb-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black leading-tight mb-8 opacity-0 animate-fade-in-up">
                 Keeping Your Favorite Shoes<br className="hidden sm:inline" /> in The Best Performance
               </h1>
+                
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <button className="bg-orange-400 font-normal text-md text-white px-8 py-4 rounded-md transition-colors sm:w-auto">
+                <button
+                  className="bg-orange-400 font-normal text-md text-white px-8 py-4 rounded-xl transition-transform duration-200 sm:w-auto opacity-0 animate-fade-in-left hover-lift"
+                >
                   Get Started
                 </button>
-                <button className="flex items-center justify-center gap-2 sm:gap-5 text-black transition-colors w-full sm:w-auto mt-4 sm:mt-0">
-                  <span className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center border-2 border-orange-400 rounded-full">
-                    <FaPlay className="text-orange-400" size={16} />
-                  </span>
+                <button 
+                  onClick={() => setIsVideoOpen(true)}
+                  className="flex items-center justify-center gap-2 text-black transition-colors w-full sm:w-auto mt-4 sm:mt-0 opacity-0 animate-fade-in-right"
+                >
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center border-2 border-orange-400 rounded-full animate-pulse-border">
+                    <FaPlay className="text-orange-400" size={18} />
+                  </div>
                   <span className="ml-2">Watch Intro</span>
                 </button>
               </div>
             </div>
             
-            <div className="relative flex justify-center items-center w-full mt-16 sm:mt-24 top-10 sm:top-48">
+            <div className="relative flex justify-center items-center w-full mt-16 sm:mt-24 top-10 sm:top-44">
               <div className="w-full h-64 sm:h-[37rem] bg-[#00A8FF] rounded-xl relative z-0"></div>
-              <Image
-                src="/images/shoe.png"
-                alt="Shoe"
-                width={570}
-                height={570}
-                className="absolute z-5 bottom-0 sm:bottom-32 object-contain w-3/4 sm:w-auto"
-                priority
-              />
+              <div className="absolute z-5 bottom-0 sm:bottom-32 w-3/4 sm:w-auto opacity-0 animate-fade-in-up-delay-600">
+                <Image
+                  src="/images/shoe.png"
+                  alt="Shoe"
+                  width={570}
+                  height={570}
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div> 
         </div>
@@ -75,7 +87,17 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 sm:mt-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div 
+              initial={{ opacity: 0, y:100 }}
+              whileInView={{
+                opacity: 1 ,
+                y:0,
+                transition:{
+                  duration: 1
+                }
+               }}
+               viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: IoMdCall, title: "Contact for Order", number: "01", bgColor: "bg-[#00A8FF]" },
                 { icon: FaTruck, title: "Pick Up Order", number: "02" },
@@ -93,7 +115,7 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
 
@@ -107,7 +129,9 @@ export default function Home() {
       </div>
       {/* 4thpage */}
       <div className="relative sm:py-0 pt-52 sm:pt-0 px-5 sm:px-40">
-        <ServicesSection/>
+        <div className='py-16'>
+          <ServicesSection/>
+        </div>
         <PricingSection/>
       </div>
       <div className="relative sm:pb-48 px-2 sm:pl-40">
@@ -116,7 +140,12 @@ export default function Home() {
       <div className="relative px-2 sm:px-32">
       <NewsBlog/>
       </div>
+
+      {/* YouTube Modal */}
+      {isVideoOpen && (
+        <YouTubeModal videoId="https://www.youtube.com/embed/tgbNymZ7vqY" />
+      )}
     </>
-  );
+  )
 }
 

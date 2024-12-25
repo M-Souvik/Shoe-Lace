@@ -24,7 +24,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative z-10 py-16">
+    <section className="relative z-10">
       <div className=" mx-auto">
         {/* Section Header */}
         <div className="text-center mb-7">

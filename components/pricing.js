@@ -1,5 +1,7 @@
-import { Check, CheckCheck } from 'lucide-react'
+'use client'
 
+import { Check, CheckCheck } from 'lucide-react'
+import {motion} from 'motion/react'
 const pricingPlans = [
   {
     name: "Standard Clean",
@@ -49,9 +51,22 @@ export default function PricingSection() {
           <p className="text-gray-600 max-w-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button className="mt-6 btn px-6 py-3 bg-orange-400 text-white rounded-md hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-300">
+          <motion.div
+          initial={{ opacity: 0, x:-500 }}
+          whileInView={{
+            opacity: 1 ,
+            x:0,
+            transition:{
+              duration: 1,
+            }
+           }}
+
+           viewport={{ once: true }}
+          >
+          <button className="mt-6 btn px-6 py-3 bg-orange-400 text-white rounded-xl hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-300">
             View All Plans
           </button>
+          </motion.div>
         </div>
         <div className="bg-white flex flex-col sm:flex-row sm:gap-2 items-center rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border">
               <div className="text-center mb-6 sm:px-6">

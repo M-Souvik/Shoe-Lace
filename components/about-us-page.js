@@ -1,6 +1,9 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
+import { motion } from 'motion/react'
 
 const AboutUsPage = () => {
   return (
@@ -55,10 +58,18 @@ const AboutUsPage = () => {
       </div>
       </div>
 
-      
+      <motion.div 
 
-      {/* Decorative image */}
-      <div className="relative top-0 w-full sm:w-60 sm:h-56 right-0 z-20">
+      initial={{ opacity: 0, x:100 }}
+      whileInView={{
+        opacity: 1 ,
+        x:0,
+        transition:{
+          duration: 1
+        }
+       }}
+       viewport={{once: true}}
+      className="relative top-0 w-full sm:w-60 sm:h-56 right-0 z-20">
         <Image
           src="/images/banner-2.jpg"
           alt="Decorative pattern"
@@ -66,16 +77,28 @@ const AboutUsPage = () => {
           height={500}
           className="rounded-xl sm:object-cover w-full h-full"
         />
+      </motion.div>
       </div>
-      </div>
-      <div className="flex flex-wrap gap-4 sm:gap-10 sm:w-full justify-center sm:justify-start">
+
+
+      <motion.div 
+      initial={{ opacity: 0, x:-100 }}
+      whileInView={{
+        opacity: 1 ,
+        x:0,
+        transition:{
+          duration: 1
+        }
+       }}
+       viewport={{once: true}}
+      className="flex flex-wrap gap-4 sm:gap-10 sm:w-full justify-center sm:justify-start">
         <button size="lg" className="btn bg-yellow-500 hover:bg-yellow-500 text-white px-10 py-4 hover:-translate-y-2 transition-transform duration-300">
           About Us
         </button>
         <button size="lg" variant="outline" className="btn bg-transparent  border-blue-400 text-blue-400 hover:bg-transparent px-10 py-4 hover:-translate-y-2 transition-transform duration-300">
           Contact Us
         </button>
-      </div>
+      </motion.div>
     </div>
   </div>
   )

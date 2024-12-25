@@ -1,16 +1,25 @@
+'use client'
+
 import PricingSection from '@/components/pricing'
 import ServicesSection from '@/components/services-page'
 import Testimonials from '@/components/testimonials-page'
 import React from 'react'
 import { FaHandsWash, FaTruck } from 'react-icons/fa'
 import { IoMdCall } from 'react-icons/io'
+import {motion} from 'motion/react'
+import Header from '@/components/header'
 
 const Services = () => {
   return (
     <>
     <div className='px-5 lg:px-40 md:px-20'>
+      <div className='pt-12'>
+    <Header title={'Services'} link={'/services'}/>
+    </div>
         <ServicesSection/>
-        <div className=" mt-24 ">
+        <div
+        
+         className=" mt-24 ">
           <h1 className="text-blue-400 text-lg font-semibold">
             Our Process
           </h1>
@@ -23,7 +32,17 @@ const Services = () => {
             </div>
           </div>
           <div className="mt-12 sm:mt-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div 
+            initial={{ opacity: 0, y:100 }}
+            whileInView={{
+              opacity: 1 ,
+              y:0,
+              transition:{
+                duration: 1
+              }
+             }}
+             viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: IoMdCall, title: "Contact for Order", number: "01", bgColor: "bg-sky-400" },
                 { icon: FaTruck, title: "Pick Up Order", number: "02" },
@@ -41,7 +60,7 @@ const Services = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
     </div>

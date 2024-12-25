@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { MapPin, Phone, Mail } from 'lucide-react';
+import Header from "@/components/header";
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false);
@@ -17,6 +18,9 @@ export default function ContactPage() {
   return (
     <div className="relative pb-96">
     <div className="container mx-auto px-40 py-12 relative z-20">
+      <div>
+      <Header title={'Contact'} link={'/contact'}/>
+      </div>
       <div className="grid lg:grid-cols-2 gap-12 content-center">
       <div className="mb-8">
         <h4 className="font-medium mb-2 text-blue-500">Contact Us</h4>
