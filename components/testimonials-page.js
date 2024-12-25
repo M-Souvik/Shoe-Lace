@@ -34,7 +34,7 @@ const Testimonials = () => {
         
       </div>
 
-      <div className='relative sm:top-32 w-[22rem] sm:w-[60rem] sm:h-full bg-gradient-to-tl from-sky-700 via-sky-300 to-sky-600 sm:p-16 rounded-2xl'>
+      <div className='relative sm:top-32 w-[21rem] sm:w-[60rem] sm:h-full bg-gradient-to-tl from-sky-700 via-sky-300 to-sky-600 sm:p-16 rounded-2xl'>
         <div className=''>
 
         <TestimonialsCarousel/>
