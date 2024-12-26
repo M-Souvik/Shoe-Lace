@@ -63,7 +63,7 @@ export default function PricingSection() {
 
            viewport={{ once: true }}
           >
-          <button className="mt-6 btn px-6 py-3 bg-orange-400 text-white rounded-xl hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-300">
+          <button className="mt-6 btn px-6 py-3 bg-orange-400 text-white rounded h-16 w-36 hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-300">
             View All Plans
           </button>
           </motion.div>

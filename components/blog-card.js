@@ -19,7 +19,7 @@ function BlogCard({ post }) {
       <time className="text-sm text-muted-foreground">{post.date}</time>
       <p className="text-muted-foreground">{post.description}</p>
       <Link
-        href={`/blog/${post.slug}`}
+        href={`/`}
         className="inline-flex items-center hover:text-sky-500 text-yellow-500"
       >
         Read More

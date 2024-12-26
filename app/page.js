@@ -13,6 +13,7 @@ import NewsBlog from "@/components/news-page"
 import { YouTubeModal } from '@/components/video-modal'
 import {motion} from 'motion/react'
 import ContactPage from './(routes)/contact/page'
+import FaqSection from '@/components/faq-section'
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
@@ -148,6 +149,9 @@ export default function Home() {
       </div>
       <div className="relative px-2 md:px-6 lg:px-32">
       <NewsBlog/>
+      </div>
+      <div  className="relative sm:py-0 pt-24 sm:pt-0 px-5 lg:px-40 md:px-6">
+        <FaqSection/>
       </div>
       <div id='contact' className="">
       <ContactPage/>

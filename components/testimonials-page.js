@@ -27,7 +27,7 @@ const Testimonials = () => {
         <p className="text-gray-600 max-w-2xl mx-auto lg:w-[28rem] md:w-[23rem] mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
         </p>
-        <button className='btn bg-orange-400 text-white h-16 w-36 hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-200'>
+        <button className='btn bg-orange-400 text-white h-16 w-36 rounded hover:bg-orange-400 hover:-translate-y-2 transition-transform duration-200'>
           Give Feedback
         </button>
         </motion.div>
