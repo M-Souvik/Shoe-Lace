@@ -80,7 +80,7 @@ export default function RequestOrderPage() {
            viewport={{ once: true }}
           >
           <button  
-            className=" w-40 h-16 relative btn bg-orange-400 rounded-xl hover:bg-orange-500 text-white hover:-translate-y-2 transition-transform duration-200"
+            className=" w-40 h-16 relative btn bg-orange-400 rounded hover:bg-orange-500 text-white hover:-translate-y-2 transition-transform duration-200"
           >
             Request Order
           </button>

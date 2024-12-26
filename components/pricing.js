@@ -52,7 +52,7 @@ export default function PricingSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <motion.div
-          initial={{ opacity: 0, x:-500 }}
+          initial={{ opacity: 0, x:-100 }}
           whileInView={{
             opacity: 1 ,
             x:0,

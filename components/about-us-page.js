@@ -92,7 +92,7 @@ const AboutUsPage = () => {
        }}
        viewport={{once: true}}
       className="flex flex-wrap gap-4 sm:gap-10 sm:w-full justify-center sm:justify-start">
-        <button size="lg" className="btn bg-yellow-500 hover:bg-yellow-500 text-white px-10 py-4 hover:-translate-y-2 transition-transform duration-300">
+        <button size="lg" className="btn bg-orange-400 rounded hover:bg-orange-400 text-white px-10 py-4 hover:-translate-y-2 transition-transform duration-300">
           About Us
         </button>
         <button size="lg" variant="outline" className="btn bg-transparent  border-blue-400 text-blue-400 hover:bg-transparent px-10 py-4 hover:-translate-y-2 transition-transform duration-300">

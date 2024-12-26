@@ -39,7 +39,7 @@ const Navbar = () => {
               Contact Us
             </Link> */}
           </div>
-          <Link href={'/#contact'} className="bg-orange-400 text-white px-6 py-3 hidden lg:block rounded-md hover:-translate-y-2 transition-transform duration-300">
+          <Link href={'/#contact'} className="bg-orange-400 text-white px-6 py-3 hidden lg:block rounded hover:-translate-y-2 transition-transform duration-300 ">
             Contact Us
           </Link>
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
@@ -60,11 +60,11 @@ const Navbar = () => {
             </div>
             <div className='space-y-2 pt-4 text-xl text-white font-semibold'>
 
-              <li><Link href={'/'} className='hover:text-orange-500 drawer-overlay active:bg-blue-600' onClick={() => {document.getElementById('my-drawer-3').click()}} aria-label="close sidebar">Home</Link></li>
-              <li><Link href={'/about-us'} className={`hover:text-orange-500 `} onClick={() => {document.getElementById('my-drawer-3').click()}}>About Us</Link></li>
-              <li><Link href={'/services'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Services</Link></li>
-              <li><Link href={'/FAQ'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>FAQ</Link></li>
-              <li><Link href={'/contact'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Contact</Link></li>
+              <li><Link href={'/'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}} aria-label="close sidebar">Home</Link></li>
+              <li><Link href={'/#aboutus'} className={`hover:text-orange-500 focus:bg-blue-700`} onClick={() => {document.getElementById('my-drawer-3').click()}}>About Us</Link></li>
+              <li><Link href={'/#service'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Services</Link></li>
+              {/* <li><Link href={'/FAQ'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>FAQ</Link></li> */}
+              <li><Link href={'/#contact'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Contact</Link></li>
             </div>
             </ul>
           </div>

@@ -43,11 +43,14 @@ export default function Home() {
               </h1>
                 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div className=' hover:-translate-y-2 transition-transform duration-200'>
+
                 <button
-                  className="bg-orange-400 font-normal text-md text-white px-8 py-4 rounded-xl transition-transform duration-200 sm:w-auto opacity-0 animate-fade-in-left hover-lift"
+                  className="bg-orange-400 font-normal text-md text-white px-8 py-4 rounded transition-transform duration-200 sm:w-auto opacity-0 animate-fade-in-left "
                 >
                   Get Started
                 </button>
+                </div>
                 <button 
                   onClick={() => setIsVideoOpen(true)}
                   className="flex items-center justify-center gap-2 text-black transition-colors w-full sm:w-auto mt-4 sm:mt-0 opacity-0 animate-fade-in-right"
@@ -60,9 +63,9 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative flex justify-center items-center w-full mt-16 sm:mt-24 top-10 sm:top-44">
+            <div className="relative flex justify-center items-center w-full mt-16 sm:mt-24 top-10 md:top-36 lg:top-44">
               <div className="w-full h-64 sm:h-[37rem] bg-[#00A8FF] rounded-xl relative z-0"></div>
-              <div className="absolute z-5 bottom-0 sm:bottom-32 w-3/4 sm:w-auto opacity-0 animate-fade-in-up-delay-600">
+              <div className="absolute z-5 bottom-0 sm:bottom-40 lg:bottom-32 w-3/4 sm:w-auto opacity-0 animate-fade-in-up-delay-600">
                 <Image
                   src="/images/shoe.png"
                   alt="Shoe"
