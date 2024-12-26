@@ -58,13 +58,13 @@ const Navbar = () => {
             <X size={30} className='bg-orange-400  rounded' color='white'/>
             </label>
             </div>
-            <div className='space-y-2 pt-4 text-xl text-white font-semibold'>
+            <div className='space-y-2 pt-4 text-xl flex flex-col text-white font-semibold'>
 
-              <li><Link href={'/'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}} aria-label="close sidebar">Home</Link></li>
-              <li><Link href={'/#aboutus'} className={`hover:text-orange-500 focus:bg-blue-700`} onClick={() => {document.getElementById('my-drawer-3').click()}}>About Us</Link></li>
-              <li><Link href={'/#service'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Services</Link></li>
+              <Link href={'/'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}} aria-label="close sidebar">Home</Link>
+              <Link href={'/#aboutus'} className={`hover:text-orange-500  py-4`} onClick={() => {document.getElementById('my-drawer-3').click()}}>About Us</Link>
+              <Link href={'/#service'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}}>Services</Link>
               {/* <li><Link href={'/FAQ'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>FAQ</Link></li> */}
-              <li><Link href={'/#contact'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>Contact</Link></li>
+              <Link href={'/#contact'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}}>Contact</Link>
             </div>
             </ul>
           </div>
