@@ -59,11 +59,9 @@ const Navbar = () => {
             </label>
             </div>
             <div className='space-y-2 pt-4 text-xl flex flex-col text-white font-semibold'>
-
-              <Link href={'/'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}} aria-label="close sidebar">Home</Link>
+              <Link href={'/'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}} >Home</Link>
               <Link href={'/#aboutus'} className={`hover:text-orange-500  py-4`} onClick={() => {document.getElementById('my-drawer-3').click()}}>About Us</Link>
               <Link href={'/#service'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}}>Services</Link>
-              {/* <li><Link href={'/FAQ'} className='hover:text-orange-500' onClick={() => {document.getElementById('my-drawer-3').click()}}>FAQ</Link></li> */}
               <Link href={'/#contact'} className='hover:text-orange-500 py-4' onClick={() => {document.getElementById('my-drawer-3').click()}}>Contact</Link>
             </div>
             </ul>

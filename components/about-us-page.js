@@ -65,7 +65,8 @@ const AboutUsPage = () => {
         opacity: 1 ,
         x:0,
         transition:{
-          duration: 1
+          duration: 2,
+          
         }
        }}
        viewport={{once: true}}
@@ -87,7 +88,8 @@ const AboutUsPage = () => {
         opacity: 1 ,
         x:0,
         transition:{
-          duration: 1
+          duration: 1,
+          delay: 1
         }
        }}
        viewport={{once: true}}

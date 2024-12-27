@@ -17,12 +17,9 @@ import FaqSection from '@/components/faq-section'
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
-
-  console.log(isVideoOpen)
-
   return (
     <>
-      <div className="min-h-screen w-full px-5 lg:px-40 md:px-6 ">
+      <div className="min-h-screen w-full px-5 lg:px-40 md:px-6 flex flex-col ">
         <div className="absolute inset-0 z-0 w-full flex">
           <svg
             viewBox="0 0 1440 320"
@@ -36,7 +33,7 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-        <div className="relative z-5 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-32 w-full top-10">
+        <div className="relative z-5 container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-32 w-full top-10 flex-grow">
           <div className="flex flex-col items-center">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-black leading-tight mb-8 opacity-0 animate-fade-in-up">
@@ -100,7 +97,7 @@ export default function Home() {
                 opacity: 1 ,
                 y:0,
                 transition:{
-                  duration: 1
+                  duration: 2
                 }
                }}
                viewport={{ once: true }}

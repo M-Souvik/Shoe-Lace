@@ -12,14 +12,14 @@ const Testimonials = () => {
       
       className=" mb-12 relative lg:top-[20rem] md:top-[17rem]">
         {/* <h2 className="text-blue-400 text-sm font-semibold mb-2">Testimonials</h2> */}
-        <h3 className="lg:text-5xl font-bold mb-4 md:text-4xl">Clients Feedback</h3>
+        <h3 className=" text-4xl lg:text-5xl font-bold mb-4 md:text-4xl">Clients Feedback</h3>
         <motion.div
         initial={{ opacity: 0, x:-300 }}
         whileInView={{
           opacity: 1 ,
           x:0,
           transition:{
-            duration: 1,
+            duration: 2,
           }
          }}
   
