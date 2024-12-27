@@ -18,7 +18,7 @@ const Footer = () => {
             
             <div className="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto flex flex-col sm:flex-row gap-3">
             <input type="text" placeholder="Enter your email address" className="input input-bordered sm:w-96" required/>
-            <button className="btn px-10 bg-orange-500 hover:bg-orange-400 border-none text-white ">Subcribe</button>
+            <button className="btn px-10 bg-orange-400 hover:bg-orange-400 border-none text-white ">Subcribe</button>
             </div>
 
         </div>
@@ -29,10 +29,10 @@ const Footer = () => {
                 <Image src={'/images/white-shoes-logo.png'} width={280} height={280} alt='logo' className='py-5 sm:py-0'/>
                 <p className='text-white py-4 sm:pr-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus optio animi dignissimos doloribus reiciendis</p>
                 <div className="flex items-center gap-3 pt-3">
-                    <button className='bg-orange-500 text-white btn border-none'><LuFacebook size={20}/></button>
-                    <button className='bg-orange-500 text-white btn border-none'><LuTwitter size={20}/></button>
-                    <button className='bg-orange-500 text-white btn border-none'><LuInstagram size={20}/></button>
-                    <button className='bg-orange-500 text-white btn border-none'><LuYoutube size={20}/></button>
+                    <button className='bg-orange-400 text-white btn border-none'><LuFacebook size={20}/></button>
+                    <button className='bg-orange-400 text-white btn border-none'><LuTwitter size={20}/></button>
+                    <button className='bg-orange-400 text-white btn border-none'><LuInstagram size={20}/></button>
+                    <button className='bg-orange-400 text-white btn border-none'><LuYoutube size={20}/></button>
                 </div>
             </div>
             <div className='col-span-2'>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="flex flex-col items-start mt-5 space-y-4">
                     <span className='flex gap-2 items-center'><LuClock8 className='text-orange-400'/><h1 className='text-white'>9 AM - 10 AM, Monday - Saturday</h1></span>
                     <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae perferendis quos facilis error ullam quidem facere eveniet cumque unde velit!</p>
-                    <button className="btn px-10 bg-orange-500 hover:bg-orange-400 border-none text-white font-medium">Order Pickup Now</button>
+                    <button className="btn px-10 bg-orange-400 hover:bg-orange-400 border-none text-white font-medium">Order Pickup Now</button>
                 </div>
             </div>
 
